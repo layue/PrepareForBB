@@ -14,6 +14,7 @@ public class NTo1s2s {
         return nTo1s2s(n - 1) + nTo1s2s(n - 2);
     }
     public static void main(String[] args) {
+        System.out.print("Please input integer n:");
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
 
