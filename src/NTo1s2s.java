@@ -1,5 +1,3 @@
-package com.company;
-
 import java.util.Scanner;
 
 /*Given an integer n, return the number of ways it can be represented as a sum of 1s and 2s, order matters*/
