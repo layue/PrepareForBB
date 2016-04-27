@@ -21,14 +21,15 @@ public class NTo1s2s {
         if(n == 2)
             return 2;
 
-        int[] a = new int[n];
-
-        a[0] = 1;
-        a[1] = 2;
+        int nMinus1 = 2;
+        int nMinus2 = 1;
+        int result = 0;
         for(int i = 2; i < n; i ++) {
-            a[i] = a[i -1] + a[i - 2];
+            result = nMinus1 + nMinus2;
+            nMinus2 = nMinus1;
+            nMinus1 = result;
         }
-        return a[n - 1];
+        return result;
     }
     public static void main(String[] args) {
         System.out.print("Please input integer n:");
