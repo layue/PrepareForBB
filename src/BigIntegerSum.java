@@ -52,7 +52,7 @@ public class BigIntegerSum {
             return String.valueOf(s, 1, s.length - 1);
         }
     }
-    
+
     public static void main(String[] args) {
         System.out.print("Please input two big integers: ");
         Scanner in = new Scanner(System.in);
